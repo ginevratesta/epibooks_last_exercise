@@ -1,0 +1,14 @@
+.card_body {
+    height: 230px;
+  }
+  
+  .dark_ {
+    background-color: black;
+    color: white;
+    border: 0;
+  }
+  
+  .clicked-card {
+    border: 2px solid red;
+  }
+  

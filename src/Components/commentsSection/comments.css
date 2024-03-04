@@ -1,0 +1,16 @@
+.comments_ {
+    height: 500px;
+    overflow-y: scroll;
+  }
+  
+  .comment-sec{
+    border: 2px solid #F8C146;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .comment-det{
+    color: #F8C146;
+  }
+  

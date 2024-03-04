@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { EpicBookDataProvider } from "./Context/ContextEpibook";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Homepage from "./Components/pages/Homepage";
+import ErrorPage from "./Components/pages/ErrorPage";
+import CardDetailsPage from "./Components/pages/CardDetailsPage";
 
-function App() {
+export const Context = React.createContext();
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <EpicBookDataProvider>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="*" element={<ErrorPage />} />
+          <Route path={"/details/:id"} element={<CardDetailsPage />} />
+        </Routes>
+      </EpicBookDataProvider>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

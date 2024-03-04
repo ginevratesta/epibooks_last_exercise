@@ -1,0 +1,10 @@
+.card img{
+    aspect-ratio: 1/2;
+    height: 500px;
+}
+
+.dark_{
+    background-color: black;
+    color: white;
+    border: 0;
+}
