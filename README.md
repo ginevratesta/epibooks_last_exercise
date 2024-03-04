@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+_**[Pages link](https://epibooks-react.netlify.app/)**_
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
