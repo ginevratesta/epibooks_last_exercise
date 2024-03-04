@@ -32,7 +32,9 @@ const GetComments = () => {
       fetchComments();
       updatesData("setRevalidate", false);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [comment.elementId, revalidate, prevElementId, updatesData]);
+
 
   useEffect(() => {
     setPrevElementId(comment.elementId);

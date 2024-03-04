@@ -7,17 +7,19 @@ import "./Details.css";
 
 const BookDetails = () => {
   const { id } = useParams();
-  const { comment, updatesData, isId, isDarkMode} = useContext(EpiBookContext);
+  const { comment, updatesData, isDarkMode} = useContext(EpiBookContext);
   const [singleBook, setSingleBook] = useState(null);
 
   useEffect(() => {
     if (id) {
       updatesData("setIsId", true);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
   
   useEffect(() => {
     updatesData("setComment", { ...comment, elementId: id });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const getSingleBook = async () => {
@@ -43,6 +45,7 @@ const BookDetails = () => {
 
   useEffect(() => {
     getSingleBook();
+    // eslint-disable-next-line
   }, [id, comment.elementId]);
 
   return (
