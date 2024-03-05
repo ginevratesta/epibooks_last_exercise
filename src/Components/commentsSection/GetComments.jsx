@@ -42,7 +42,7 @@ const GetComments = () => {
 
 
   return (
-    <div className="comments_">
+    <div className="comments_" data-testid="comments-area">
       {commentSection.length === 0 ? (
         <p>No comments yet</p>
       ) : (

@@ -13,7 +13,7 @@ const BookCard = ({ book, onClick, id }) => {
 
   return (
     <Col md="6" lg="4">
-      <Card className={isDarkMode ? "dark_" : ""}>
+      <Card className={isDarkMode ? "dark_" : ""} data-testId="book-card">
         <Card.Img variant="top" src={book.img} />
         <Card.Body
           className={
