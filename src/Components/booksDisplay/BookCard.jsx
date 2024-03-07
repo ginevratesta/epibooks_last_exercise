@@ -33,7 +33,7 @@ const BookCard = ({ book, onClick, id }) => {
           </ListGroup>
 
           <div className="d-flex justify-content-between">
-          <Button className="px-1" variant="danger" id={id} onClick={onClick}>
+          <Button className="px-1" variant="danger" id={id} onClick={onClick} data-testid="clicked">
             Comments
           </Button>
           <Button variant="danger" onClick={handleButtonClick} className="link-warning link-underline link-underline-opacity-0">
