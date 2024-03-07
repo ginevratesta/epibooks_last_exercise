@@ -27,10 +27,10 @@ const CommentsSection = () => {
   };
 
   return (
-    <Container>
+    <Container data-testid="comment-sec">
       <Row>
         <h3 className="text-center mt-0 pb-2">Comments</h3>
-        <Col>
+        <Col >
           <GetComments />
         </Col>
 
